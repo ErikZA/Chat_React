@@ -86,4 +86,13 @@ router.post('/loginChat', function (req, res, next) {
   });
 });
 
+router.get('/Teste', function (req, res, next) {
+  var context = {
+    people: [
+      { MSG:'RETORNO SERVIDOR'},
+    ]
+  };
+  res.json(context.people);
+});
+
 module.exports = router;
