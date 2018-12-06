@@ -7,6 +7,9 @@
     "heroku-postbuild": "cd client && npm install && npm install --only=dev --no-shrinkwrap && npm run build",
     "postinstall": "npm run build"
   },
+  "engines": {
+    "node": ">=4.2.1"
+  },
   "dependencies": {
     "axios": "^0.18.0",
     "cookie-parser": "~1.4.3",
@@ -18,4 +21,5 @@
     "morgan": "~1.9.0",
     "nodemon": "^1.18.7"
   }
+
 }
